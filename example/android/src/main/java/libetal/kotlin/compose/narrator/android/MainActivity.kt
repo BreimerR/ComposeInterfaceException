@@ -3,12 +3,7 @@ package libetal.kotlin.compose.narrator.android
 import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.tooling.preview.Preview
-import androidx.lifecycle.lifecycleScope
-import libetal.kotlin.compose.narrator.common.App
+import com.library.App
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,9 +11,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContent {
-            MaterialTheme {
-                App()
-            }
+            App()
         }
 
     }
@@ -26,5 +19,6 @@ class MainActivity : AppCompatActivity() {
     override fun onBackPressed() {
 
     }
+
 
 }

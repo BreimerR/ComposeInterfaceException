@@ -16,3 +16,11 @@ buildscript {
         classpath("com.android.tools.build:gradle:$gradleVersion")
     }
 }
+
+allprojects{
+    repositories{
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}

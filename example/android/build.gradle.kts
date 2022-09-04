@@ -1,7 +1,5 @@
 @file:Suppress("UnstableApiUsage")
 
-val projectGroup: String by project
-val projectVersion: String by project
 val androidMinSdkVersion: String by project
 val androidTargetSdkVersion: String by project
 val androidCompileSdkVersion: String by project
@@ -12,8 +10,8 @@ plugins {
     kotlin("android")
 }
 
-group = "$projectGroup.narrator.samples.android"
-version = projectVersion
+group = "com.example"
+version = "1.0.0"
 
 dependencies {
     implementation(compose.runtime)
@@ -28,7 +26,7 @@ dependencies {
 android {
     compileSdk = androidCompileSdkVersion.toInt()
     defaultConfig {
-        applicationId = "$projectGroup.narrator.core.jvm.android"
+        applicationId = "com.example"
         minSdk = androidMinSdkVersion.toInt()
         targetSdk = androidTargetSdkVersion.toInt()
         versionCode = 1
